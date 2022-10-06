@@ -1,0 +1,53 @@
+# 100days-codeing-challenge
+
+Checking every text case for input to check odd even
+text case check for input-
+Null 
+zero
+not a number
+special char
+           
+import java.util.Scanner;  
+
+public class oddeven {
+     
+   
+public static void main(String[] args)   
+{  
+String num1;  
+//object of the Scanner class  
+Scanner sc = new Scanner(System.in);  
+System.out.print("Enter a number: ");  
+//reading a number from the user  
+num1 = sc.nextLine();  
+
+
+
+if (num1 == null) {     //checks the input is null or not
+        System.out.println("This is not a number."); 
+    }
+else
+    try {
+        double d = Double.parseDouble(num1);
+        if(d<=0)     //checks the number is  equal to 0 or negative
+       {  
+        System.out.println("The number is zero or negative.");  
+            }  
+        else if(d%2==0)   //checks the number is even number 
+       {  
+        System.out.println("Input is a even number.");  
+            }  
+
+        else  //checks the number is odd number
+        {  
+        System.out.println("Input is a odd number");  
+            }  
+ 
+    } catch (NumberFormatException nfe) {  //if the input is not a number here it will catch the exception
+        System.out.println("This is not a number");  
+    }
+  
+
+
+}  
+}  
