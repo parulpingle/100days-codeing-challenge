@@ -1,3 +1,6 @@
+input a intiger and reverse it
+
+
 class Solution {
     public int reverse(int x) {
   
