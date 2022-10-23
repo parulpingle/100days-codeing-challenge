@@ -1,0 +1,41 @@
+Check wether given input is a palindrom number or not.
+
+import java.util.Scanner;
+public class PALINDROM {
+
+  public static void main(String[] args) {
+
+  
+   
+    
+Scanner sc=new Scanner(System.in);
+        System.out.println("ENTER THE NUMBER");
+        String str = sc.nextLine();
+ 
+
+     if(str==null)
+   {
+   System.out.println("NULL VALUE ENTERED");
+   System.exit(0);
+   }
+    try{
+       int r,sum=0,temp;    
+  int n=Integer.parseInt(str);  //It is the number variable to be checked for palindrome  
+  
+  temp=n;    
+  while(n>0){    
+   r=n%10;  //getting remainder  
+   sum=(sum*10)+r;    
+   n=n/10;    
+  }    
+  if(temp==sum)    
+   System.out.println("palindrome number ");    
+  else    
+   System.out.println("not palindrome");
+    } catch (NumberFormatException nfe) {  //if the input is not a number here it will catch the exception
+       
+     System.out.println(str+" is not a valid input");
+    
+  }
+}
+}
