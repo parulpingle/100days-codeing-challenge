@@ -1,0 +1,40 @@
+Find the value of Power of given input number
+ import java.util.Scanner;  
+
+public class Power {
+     
+   static int power(int base, int exponent)  
+{  
+int power = 1;  
+//increment the value of i after each iteration until the condition becomes false  
+for (int i = 1; i <= exponent; i++)   
+//calculates power  
+power = power * base;  
+//returns power  
+return power;  
+}  
+public static void main(String[] args)   
+{  
+String num1;  
+//object of the Scanner class  
+Scanner sc = new Scanner(System.in);  
+System.out.print("Enter a number:  and exponent");  
+//reading a number from the user  
+num1 = sc.nextLine();  
+String num2 = sc.nextLine(); 
+if (num1 == null || num2==null) {     //checks the input is null or not
+        System.out.println("This is not a number."); 
+    }
+else
+    try {
+        int base = Integer.parseInt(num1);
+         int exponent = Integer.parseInt(num2);
+       int pow=power(base, exponent);  
+//prints the result  
+System.out.println(base +" to the power " +exponent + " is: "+pow);  
+ 
+    } catch (NumberFormatException nfe) {  //if the input is not a number here it will catch the exception
+        System.out.println("This is not a number");  
+    }
+}  
+}  
