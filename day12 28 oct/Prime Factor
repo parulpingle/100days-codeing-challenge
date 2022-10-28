@@ -1,0 +1,46 @@
+Q. Find the prime factors of a given number
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author mobil
+ */
+public class Primefactor{   
+    
+  
+ public static void main(String args[]){    
+  
+     Scanner sc=new Scanner(System.in);
+        System.out.println("ENTER THE digit");
+       
+        
+      String str = sc.nextLine();
+  if(str==null)
+         System.out.println("NULL VALUE CANT BE ACCEPTED");
+   
+    try{
+       int number = Integer.parseInt(str);
+     
+      for(int i = 2; i< number; i++) {
+         while(number%i == 0) {
+            System.out.println(i+" ");
+            number = number/i;
+         }
+      }
+      if(number >2) {
+         System.out.println(number);
+      }
+    }
+   catch (NumberFormatException e) {  //if the input is not a number here it will catch the exception
+       
+     System.out.println(str+" is not a valid input");
+    
+     
+     
+     
+     
+     
+  }
+}    
+}  
