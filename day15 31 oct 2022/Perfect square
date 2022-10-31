@@ -1,3 +1,5 @@
+Q- Check the input  is a perfect number.
+
 import java.util.Scanner;
 public class Mavenproject18 {
 
