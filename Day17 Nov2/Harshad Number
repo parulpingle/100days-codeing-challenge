@@ -1,3 +1,5 @@
+Finding a given number is harshad number or not
+
 import java.util.Scanner;
 public class Mavenproject20 {
 
