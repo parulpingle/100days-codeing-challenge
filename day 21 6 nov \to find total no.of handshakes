@@ -1,0 +1,18 @@
+class GFG {
+ 
+    // function to find all possible handshakes
+    static int handshake(int n)
+    {
+    
+        if (n == 0)
+            return 0;
+        else
+            return (n - 1) + handshake(n - 1);
+    }
+ 
+    public static void main(String[] args)
+    {
+        int n = 9;
+        System.out.print(handshake(n));
+    }
+}
