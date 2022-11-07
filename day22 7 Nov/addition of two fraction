@@ -1,3 +1,7 @@
+addition of two fraction numbers
+
+
+
 public class Mavenproject26 {
    public static void main(String[] args) {
         // initialise numerator of first fraction
