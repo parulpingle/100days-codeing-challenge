@@ -1,0 +1,24 @@
+public class Mavenproject26 {
+   public static void main(String[] args) {
+        // initialise numerator of first fraction
+        int numerator1 = 2;
+
+        // initialise numerator of second fraction
+        int denominator1 = 3;
+
+        // initialise numerator of second fraction
+        int numerator2 = 4;
+
+        // initialise denominator of second fraction
+        int denominator2 = 5;
+
+        // use the cross multiplication rule
+        int numerator3 = numerator1 * denominator2 + numerator2 * denominator1;
+
+        // find lcm
+        int denominator3 = denominator1 * denominator2;
+
+        // print the results.
+        System.out.println(numerator3 + "/" + denominator3);
+    }
+}  
