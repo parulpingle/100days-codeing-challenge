@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Area {
+    public static void main (String[] args){
+    double radious,area;
+    Scanner input = new Scanner(System.in);
+    System.out.println("enter the radious of cirlce");
+    radious = input.nextDouble();
+    input.close();
+    area = Math.PI*radious*radious;
+            System.out.println("area of circle is" + area);
+    }
+} 
