@@ -1,0 +1,18 @@
+calculate sum of array element
+
+import java .util.Scanner;
+public class NewClass1 {
+    public static void main (String args[]){
+Scanner scan=new Scanner(System.in);
+int[] marks=new int[5];
+int sum=0;
+System.out.print("Enter the array elements: \n");
+for(int count=0; count<5; count++){ 
+marks[count]=scan.nextInt();
+} 
+for(int count:marks){ 
+sum=sum+count; 
+} 
+System.out.println("sum of array elements is:"+sum); 
+}
+}
