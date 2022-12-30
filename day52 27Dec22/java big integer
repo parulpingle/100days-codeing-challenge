@@ -1,0 +1,23 @@
+java big integer
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+     Scanner scanner = new Scanner(System.in);
+        String a = scanner.nextLine();
+        String b = scanner.nextLine();
+        if (a.length() <= 200 && b.length() <= 200) {
+            BigInteger A = new BigInteger(a);
+            BigInteger B = new BigInteger(b);
+            BigInteger C = A.add(B);
+            BigInteger D = A.multiply(B);
+            System.out.println(C);
+            System.out.println(D);
+        }
+    }
+}
