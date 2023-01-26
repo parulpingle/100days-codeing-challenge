@@ -1,0 +1,27 @@
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        
+        int start = 0;
+        int end = 0;
+        int[] chars = new int[128];
+        int maxLen = 0;
+
+        while(end < s.length()){
+
+            char currChar = s.charAt(end);
+            if(chars[currChar] == 0){ 
+                chars[currChar] = 1;
+                end += 1;
+            }
+            else{
+                while(chars[s.charAt(end)] > 0){
+                    chars[s.charAt(start)] = 0;
+                    start += 1;
+                }
+            }
+            maxLen = Integer.max(maxLen, end - start);
+        }
+        return maxLen;
+    }
+
+}
